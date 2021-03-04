@@ -1,0 +1,39 @@
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  box-sizing: border-box;
+  position: relative;
+  line-height: 1.5;
+  font-family: sans-serif;
+  font-family: 'Open Sans', sans-serif;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+li {
+  list-style: none;
+}
+
+input:focus,
+button:focus,
+a:focus,
+textarea:focus {
+  outline: none;
+}
+
+textarea {
+  resize: none;
+}

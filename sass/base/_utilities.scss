@@ -1,0 +1,80 @@
+.container {
+  max-width: 120rem;
+  margin: auto;
+  width: 95%;
+}
+
+.heading {
+  font-family: 'Roboto Slab', sans-serif;
+}
+
+.heading-bold {
+  font-weight: 700;
+}
+
+.heading-primary {
+  font-size: 6rem;
+}
+
+.heading-sec {
+  font-size: 5rem;
+}
+
+.heading-sm {
+  font-size: 2rem;
+}
+
+.text-primary {
+  font-size: 2rem;
+}
+
+.text-sec {
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.text-tertiary {
+  font-size: 1.4rem;
+  line-height: 1.6;
+}
+
+.section-heading {
+  position: relative;
+  display: inline-block;
+}
+
+.section-heading::after {
+  content: '';
+  position: absolute;
+  width: 5rem;
+  background: #000;
+  height: 3px;
+  top: 110%;
+  left: 0%;
+}
+
+.btn {
+  padding: 1.8rem 0rem;
+  font-size: 1.8rem;
+  font-weight: 600;
+  display: inline-block;
+  text-align: center;
+  letter-spacing: 1px;
+  color: #000;
+  min-width: 22rem;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  text-transform: uppercase;
+
+  &--primary {
+    background: #000;
+    color: #fff;
+  }
+
+  &--secondary {
+    background: #fff;
+  }
+
+  &--theme {
+    background: #fabc33;
+  }
+}
