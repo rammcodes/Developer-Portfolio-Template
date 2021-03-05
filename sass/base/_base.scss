@@ -4,6 +4,7 @@
   margin: 0;
   padding: 0;
   box-sizing: inherit;
+  font-family: inherit;
 }
 
 html {
@@ -32,6 +33,7 @@ body {
   font-family: sans-serif;
   font-family: 'Open Sans', sans-serif;
   overflow-x: hidden;
+  overflow-y: scroll;
   font-family: 'Jost', sans-serif;
 }
 
