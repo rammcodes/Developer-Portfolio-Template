@@ -127,7 +127,8 @@ textarea {
   color: #000;
   min-width: 22rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-  text-transform: uppercase; }
+  text-transform: uppercase;
+  border-radius: 5px; }
   .btn--primary {
     background: #000;
     color: #fff; }
@@ -144,7 +145,8 @@ textarea {
   transform: translate(-50%, 0%);
   background: #fff;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
-  z-index: 1000; }
+  z-index: 1000;
+  border-radius: 5px; }
   @media only screen and (max-width: 56.25em) {
     .header {
       width: calc(100% - 2rem);
@@ -257,7 +259,7 @@ textarea {
 
 .projects {
   padding: 8rem 0;
-  background: #fabc33; }
+  background: #eee; }
   @media only screen and (max-width: 56.25em) {
     .projects {
       padding: 5rem 0; } }
@@ -277,7 +279,9 @@ textarea {
   .projects-list__project {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: #fff;
-    padding: 0rem 2rem; }
+    padding: 0rem 2rem;
+    border-radius: 5px;
+    text-align: center; }
   .projects-list__img-cont {
     padding: 2rem 0rem 0rem 0;
     background: #fff;
@@ -291,6 +295,7 @@ textarea {
   .projects-list__heading {
     font-size: 2.5rem;
     font-weight: 600;
+    text-align: center;
     letter-spacing: 1px;
     color: #444;
     padding: 0rem 0;
