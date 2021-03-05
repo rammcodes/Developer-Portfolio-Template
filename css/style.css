@@ -94,14 +94,14 @@ textarea {
       font-size: 1.7rem; } }
 
 .text-sec {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.8; }
   @media only screen and (max-width: 37.5em) {
     .text-sec {
-      font-size: 1.5rem; } }
+      font-size: 1.6rem; } }
 
 .text-tertiary {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.6; }
 
 .section-heading {
@@ -331,7 +331,9 @@ textarea {
     padding: 2rem;
     width: 100%;
     border: 1px solid #ccc;
-    border-radius: 5px; }
+    border-radius: 5px;
+    font-size: 1.6rem;
+    letter-spacing: 1px; }
     .contact__form-input::-webkit-input-placeholder {
       letter-spacing: 1px; }
     .contact__form-input:-moz-placeholder {
@@ -465,3 +467,24 @@ textarea {
         font-size: 1.4rem; } }
     .main-blogs__pag-btn:first-child {
       margin-right: 2rem; }
+
+.main-cs__content {
+  background: #fff;
+  width: 100%;
+  padding: 0rem 0 8rem 0; }
+
+.main-cs__text-content {
+  color: #777;
+  width: 70%;
+  margin: 8rem auto 0 auto; }
+  @media only screen and (max-width: 75em) {
+    .main-cs__text-content {
+      width: 100%; } }
+
+.main-cs__project-main-img-cont {
+  margin-bottom: 6rem; }
+
+.main-cs__project-main-img {
+  width: 100%;
+  border-radius: 5px;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.1); }
