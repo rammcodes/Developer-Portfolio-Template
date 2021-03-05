@@ -8,11 +8,23 @@
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
   z-index: 1000;
 
+  @include respond(tab-port) {
+    width: calc(100% - 2rem);
+    top: 1rem;
+  }
+
+  @include respond(phone) {
+    padding: 2rem 0;
+  }
+
   &__content {
     display: flex;
     align-items: center;
     justify-content: space-between;
     padding: 0 5rem;
+    @include respond(tab-port) {
+      padding: 0 2rem;
+    }
   }
 
   &__logo-container {
@@ -23,6 +35,9 @@
   }
   &__links {
     display: flex;
+    @include respond(phone) {
+      display: none;
+    }
   }
   &__link {
     padding: 3rem 3rem;
@@ -43,17 +58,31 @@
   background-size: cover;
   background-position: center;
 
+  @include respond(phone) {
+    padding: 16rem 0 10rem 0;
+  }
+
   &__info {
     margin: 3rem 0 7rem 0;
     max-width: 80rem;
+    @include respond(phone) {
+      margin: 3rem 0 4rem 0;
+    }
   }
   &__text-primary {
     color: #333;
   }
 
   &__btn {
+    @include respond(phone) {
+      width: 100%;
+    }
     &:first-child {
       margin-right: 2rem;
+      @include respond(phone) {
+        margin-bottom: 1.5rem;
+        margin-right: 0;
+      }
     }
   }
 }
@@ -62,19 +91,33 @@
   min-height: 50vh;
   background: #fff;
   padding: 10rem 0 13rem 0;
+  @include respond(tab-port) {
+    padding: 5rem 0 8rem 0;
+  }
   &__content {
     display: grid;
     grid-template-columns: 1fr 1fr;
     grid-gap: 2rem;
+    @include respond(tab-port) {
+      grid-template-columns: 1fr;
+      grid-gap: 5rem;
+    }
   }
 
   &__main-content {
     max-width: 50rem;
     padding-top: 10rem;
+    @include respond(tab-land) {
+      padding-top: 0;
+      max-width: unset;
+    }
   }
 
   &__text-content {
     margin: 6rem 0;
+    @include respond(phone) {
+      margin: 5rem 0 4rem 0;
+    }
   }
 
   &__text-sec {
@@ -87,6 +130,11 @@
     box-shadow: 30px 30px 0px 0px rgba(#fabc33, 1);
     -webkit-box-shadow: 30px 30px 0px 0px rgba(#fabc33, 1);
     -moz-box-shadow: 30px 30px 0px 0px rgba(#fabc33, 1);
+    @include respond(tab-land) {
+      box-shadow: 10px 10px 0px 0px rgba(#fabc33, 1);
+      -webkit-box-shadow: 10px 10px 0px 0px rgba(#fabc33, 1);
+      -moz-box-shadow: 10px 10px 0px 0px rgba(#fabc33, 1);
+    }
   }
 
   &__img {
@@ -99,6 +147,10 @@
 .projects {
   padding: 8rem 0;
   background: #fabc33;
+
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
 }
 
 .projects-list {
@@ -107,10 +159,22 @@
   grid-template-columns: 1fr 1fr;
   grid-gap: 5rem;
 
+  @include respond(tab-land) {
+    grid-gap: 2rem;
+  }
+
+  @include respond(phone) {
+    grid-template-columns: 1fr;
+    grid-gap: 3rem;
+  }
+
   &__project {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: #fff;
     padding: 0rem 4rem;
+    @include respond(tab-land) {
+      padding: 0rem 3rem;
+    }
   }
   &__img-cont {
     padding: 4rem 0rem 4rem 0;
@@ -133,6 +197,7 @@
   &__text-tertiary {
     color: #777;
     margin-bottom: 4rem;
+    line-height: 1.9;
   }
   &__btn {
     width: 100%;
@@ -147,11 +212,17 @@
   padding: 8rem 0;
   background: rgba(#fabc33, 0.1);
   background: #fff;
+  @include respond(tab-port) {
+    padding: 5rem 0;
+  }
   &__form-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: #fff;
     padding: 5rem;
     margin-top: 6rem;
+    @include respond(phone) {
+      padding: 3rem 2rem;
+    }
   }
   &__form-field {
     margin-bottom: 3rem;
@@ -196,14 +267,26 @@
     display: flex;
     justify-content: space-between;
     padding: 8rem 0;
+    @include respond(tab-port) {
+      padding: 5rem 0;
+    }
+    @include respond(phone) {
+      display: block;
+    }
   }
 
   &__row-1 {
     order: 2;
+    @include respond(tab-port) {
+      margin-bottom: 4rem;
+    }
   }
   &__row-2 {
     width: 40%;
     order: 1;
+    @include respond(tab-port) {
+      width: 100%;
+    }
   }
 
   &__short-desc {
@@ -228,5 +311,8 @@
     color: #eee;
     font-size: 1.2rem;
     text-align: left;
+    @include respond(tab-port) {
+      padding: 2rem 0;
+    }
   }
 }
