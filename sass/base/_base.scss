@@ -7,7 +7,22 @@
 }
 
 html {
-  font-size: 62.5%;
+  // This defines what 1rem is
+  font-size: 62.5%; //1 rem = 10px; 10px/16px = 62.5%
+
+  @include respond(tab-land) {
+    // width < 1200?
+    font-size: 59%; //1 rem = 
+  }
+
+  @include respond(tab-port) {
+    // width < 900?
+    font-size: 56%; //1 rem = 
+  }
+
+  @include respond(big-desktop) {
+    font-size: 65%; //1rem = 
+  }
 }
 
 body {
@@ -16,6 +31,7 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
   font-family: 'Open Sans', sans-serif;
+  overflow-x: hidden;
 }
 
 a {
