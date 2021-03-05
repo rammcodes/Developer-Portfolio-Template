@@ -53,6 +53,11 @@ textarea:focus {
   outline: none;
 }
 
+button {
+  border: none;
+  cursor: pointer;
+}
+
 textarea {
   resize: none;
 }

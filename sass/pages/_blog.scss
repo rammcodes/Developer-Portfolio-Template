@@ -63,4 +63,27 @@
     color: #999;
     font-weight: 700;
   }
+
+  &__pagination {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    @include respond(phone) {
+      margin-top: 4rem;
+      justify-content: center;
+    }
+  }
+  &__pag-btn {
+    border-radius: 5px;
+    min-width: 15rem;
+    font-size: 1.5rem;
+    @include respond(phone) { 
+        min-width: 12rem;
+        font-size: 1.4rem;
+    }
+    &:first-child {
+      margin-right: 2rem;
+    }
+  }
 }
