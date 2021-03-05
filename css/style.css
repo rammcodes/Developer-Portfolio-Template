@@ -37,7 +37,8 @@ body {
   line-height: 1.5;
   font-family: sans-serif;
   font-family: 'Open Sans', sans-serif;
-  overflow-x: hidden; }
+  overflow-x: hidden;
+  font-family: 'Jost', sans-serif; }
 
 a {
   text-decoration: none;
@@ -61,7 +62,8 @@ textarea {
   width: 90%; }
 
 .heading {
-  font-family: 'Roboto Slab', sans-serif; }
+  font-family: 'Jost', sans-serif;
+  font-weight: 600; }
 
 .heading-bold {
   font-weight: 700; }
@@ -93,7 +95,7 @@ textarea {
       font-size: 1.5rem; } }
 
 .text-tertiary {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.6; }
 
 .section-heading {
