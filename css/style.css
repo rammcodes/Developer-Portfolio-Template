@@ -30,7 +30,7 @@ html {
       font-size: 56%; } }
   @media only screen and (min-width: 112.5em) {
     html {
-      font-size: 65%; } }
+      font-size: 70%; } }
 
 body {
   box-sizing: border-box;
@@ -310,8 +310,9 @@ textarea {
 
 .contact {
   padding: 8rem 0;
-  background: rgba(250, 188, 51, 0.1);
-  background: #fff; }
+  background: linear-gradient(to right, rgba(250, 188, 51, 0.9), rgba(250, 188, 51, 0.9)), url("https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
+  background-size: cover;
+  background-position: center; }
   @media only screen and (max-width: 56.25em) {
     .contact {
       padding: 5rem 0; } }
@@ -319,7 +320,8 @@ textarea {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: #fff;
     padding: 5rem;
-    margin-top: 6rem; }
+    margin-top: 6rem;
+    border-radius: 5px; }
     @media only screen and (max-width: 37.5em) {
       .contact__form-container {
         padding: 3rem 2rem; } }
@@ -328,7 +330,8 @@ textarea {
   .contact__form-input {
     padding: 2rem;
     width: 100%;
-    border: 1px solid #ccc; }
+    border: 1px solid #ccc;
+    border-radius: 5px; }
     .contact__form-input::-webkit-input-placeholder {
       letter-spacing: 1px; }
     .contact__form-input:-moz-placeholder {
