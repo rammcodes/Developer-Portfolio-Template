@@ -330,7 +330,8 @@ textarea {
   .contact__form-input {
     padding: 2rem;
     width: 100%;
-    border: 1px solid #ccc; }
+    border: 1px solid #ccc;
+    border-radius: 5px; }
     .contact__form-input::-webkit-input-placeholder {
       letter-spacing: 1px; }
     .contact__form-input:-moz-placeholder {
