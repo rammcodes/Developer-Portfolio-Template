@@ -55,6 +55,10 @@ a:focus,
 textarea:focus {
   outline: none; }
 
+button {
+  border: none;
+  cursor: pointer; }
+
 textarea {
   resize: none; }
 
@@ -434,3 +438,22 @@ textarea {
     text-transform: uppercase;
     color: #999;
     font-weight: 700; }
+  .main-blogs__pagination {
+    margin-top: 6rem;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end; }
+    @media only screen and (max-width: 37.5em) {
+      .main-blogs__pagination {
+        margin-top: 4rem;
+        justify-content: center; } }
+  .main-blogs__pag-btn {
+    border-radius: 5px;
+    min-width: 15rem;
+    font-size: 1.5rem; }
+    @media only screen and (max-width: 37.5em) {
+      .main-blogs__pag-btn {
+        min-width: 12rem;
+        font-size: 1.4rem; } }
+    .main-blogs__pag-btn:first-child {
+      margin-right: 2rem; }
