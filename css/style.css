@@ -266,16 +266,16 @@ textarea {
   .projects-list__project {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     background: #fff;
-    padding: 0rem 4rem; }
-    @media only screen and (max-width: 75em) {
-      .projects-list__project {
-        padding: 0rem 3rem; } }
+    padding: 0rem 2rem; }
   .projects-list__img-cont {
-    padding: 4rem 0rem 4rem 0;
-    background: #fff; }
+    padding: 2rem 0rem 0rem 0;
+    background: #fff;
+    overflow: hidden;
+    margin-bottom: 3rem; }
   .projects-list__img {
     width: 100%;
-    box-shadow: 0 0 20px rgba(0, 0, 0, 0.2); }
+    height: 100%;
+    object-fit: cover; }
   .projects-list__heading {
     font-size: 2.5rem;
     font-weight: 600;
@@ -290,8 +290,6 @@ textarea {
   .projects-list__btn {
     width: 100%;
     margin-bottom: 2rem; }
-    .projects-list__btn:last-child {
-      margin-bottom: 3rem; }
 
 .contact {
   padding: 8rem 0;
