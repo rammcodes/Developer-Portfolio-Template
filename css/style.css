@@ -272,7 +272,8 @@ textarea {
     padding: 2rem 0rem 0rem 0;
     background: #fff;
     overflow: hidden;
-    margin-bottom: 3rem; }
+    margin-bottom: 3rem;
+    max-height: 350px; }
   .projects-list__img {
     width: 100%;
     height: 100%;
