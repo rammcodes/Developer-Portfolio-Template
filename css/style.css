@@ -94,14 +94,14 @@ textarea {
       font-size: 1.7rem; } }
 
 .text-sec {
-  font-size: 1.6rem;
+  font-size: 1.7rem;
   line-height: 1.8; }
   @media only screen and (max-width: 37.5em) {
     .text-sec {
-      font-size: 1.5rem; } }
+      font-size: 1.6rem; } }
 
 .text-tertiary {
-  font-size: 1.5rem;
+  font-size: 1.6rem;
   line-height: 1.6; }
 
 .section-heading {
