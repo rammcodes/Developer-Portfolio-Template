@@ -5,7 +5,6 @@
 }
 
 .heading {
-  // font-family: 'Roboto Slab', sans-serif;
   font-family: 'Jost', sans-serif;
   font-weight: 600;
 }
@@ -16,7 +15,7 @@
 
 .heading-primary {
   font-size: 6rem;
-  @include respond(phone) { 
+  @include respond(phone) {
     font-size: 4.5rem;
   }
 }
@@ -34,13 +33,13 @@
   line-height: 1.7;
   @include respond(phone) {
     font-size: 1.7rem;
-  } 
+  }
 }
 
 .text-sec {
   font-size: 1.6rem;
   line-height: 1.8;
-  @include respond(phone) { 
+  @include respond(phone) {
     font-size: 1.5rem;
   }
 }
@@ -76,7 +75,7 @@
   min-width: 22rem;
   box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
   text-transform: uppercase;
-
+  border-radius: 5px;
   &--primary {
     background: #000;
     color: #fff;
