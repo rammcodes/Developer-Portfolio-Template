@@ -28,7 +28,7 @@
     content: '';
     position: absolute;
     width: 5rem;
-    background: #000;
+    background: #fff;
     height: 5px;
     top: 120%;
     left: 0%;
@@ -107,7 +107,8 @@
   }
 
   &--theme {
-    background: $themeClr;
+    color: #fff;
+    background-image: linear-gradient(to right, $themeClrMain, $themeClrSec);
   }
 }
 
