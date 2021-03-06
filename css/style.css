@@ -75,10 +75,29 @@ textarea {
   font-weight: 700; }
 
 .heading-primary {
-  font-size: 6rem; }
+  font-size: 6rem;
+  position: relative; }
   @media only screen and (max-width: 37.5em) {
     .heading-primary {
       font-size: 4.5rem; } }
+
+.heading-primary-dec {
+  margin-bottom: 5rem; }
+  .heading-primary-dec::after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    background: #000;
+    height: 5px;
+    top: 120%;
+    left: 0%; }
+
+.heading-primary-cent {
+  text-align: center; }
+  .heading-primary-cent::after {
+    content: '';
+    left: 50%;
+    transform: translateX(-50%); }
 
 .heading-sec {
   font-size: 5rem; }
@@ -135,7 +154,13 @@ textarea {
   .btn--secondary {
     background: #fff; }
   .btn--theme {
-    background: #fabc33; }
+    background: #ffd900; }
+
+.txtW {
+  color: #fff; }
+  .txtW::after {
+    color: #fff;
+    background: #fff; }
 
 .header {
   position: fixed;
@@ -182,7 +207,7 @@ textarea {
 
 .hero {
   color: #000;
-  background: linear-gradient(to right, rgba(250, 188, 51, 0.9), rgba(250, 188, 51, 0.9)), url("https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
+  background: linear-gradient(to right, rgba(255, 217, 0, 0.9), rgba(255, 217, 0, 0.9)), url("https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
   background-size: cover;
   background-position: center;
   padding: 22rem 0 17rem 0; }
@@ -194,6 +219,18 @@ textarea {
   .hero__info {
     margin: 3rem 0 0rem 0;
     max-width: 80rem; }
+  .hero__cta {
+    margin-top: 8rem;
+    text-align: center; }
+  @media only screen and (max-width: 37.5em) {
+    .hero__btn {
+      width: 100%; } }
+  .hero__btn:first-child {
+    margin-right: 2rem; }
+    @media only screen and (max-width: 37.5em) {
+      .hero__btn:first-child {
+        margin-bottom: 1.5rem;
+        margin-right: 0; } }
 
 .home-hero__info {
   margin: 3rem 0 7rem 0; }
@@ -201,16 +238,9 @@ textarea {
     .home-hero__info {
       margin: 3rem 0 4rem 0; } }
 
-@media only screen and (max-width: 37.5em) {
-  .home-hero__btn {
-    width: 100%; } }
-
-.home-hero__btn:first-child {
-  margin-right: 2rem; }
-  @media only screen and (max-width: 37.5em) {
-    .home-hero__btn:first-child {
-      margin-bottom: 1.5rem;
-      margin-right: 0; } }
+.home-hero__cta {
+  margin-top: 0rem;
+  text-align: left; }
 
 .about {
   min-height: 50vh;
@@ -244,14 +274,14 @@ textarea {
   .about__img-cont {
     overflow: hidden;
     background: #000;
-    box-shadow: 30px 30px 0px 0px #fabc33;
-    -webkit-box-shadow: 30px 30px 0px 0px #fabc33;
-    -moz-box-shadow: 30px 30px 0px 0px #fabc33; }
+    box-shadow: 30px 30px 0px 0px #ffd900;
+    -webkit-box-shadow: 30px 30px 0px 0px #ffd900;
+    -moz-box-shadow: 30px 30px 0px 0px #ffd900; }
     @media only screen and (max-width: 75em) {
       .about__img-cont {
-        box-shadow: 10px 10px 0px 0px #fabc33;
-        -webkit-box-shadow: 10px 10px 0px 0px #fabc33;
-        -moz-box-shadow: 10px 10px 0px 0px #fabc33; } }
+        box-shadow: 10px 10px 0px 0px #ffd900;
+        -webkit-box-shadow: 10px 10px 0px 0px #ffd900;
+        -moz-box-shadow: 10px 10px 0px 0px #ffd900; } }
   .about__img {
     width: 100%;
     height: 100%;
@@ -310,7 +340,7 @@ textarea {
 
 .contact {
   padding: 8rem 0;
-  background: linear-gradient(to right, rgba(250, 188, 51, 0.9), rgba(250, 188, 51, 0.9)), url("https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
+  background: linear-gradient(to right, rgba(255, 217, 0, 0.9), rgba(255, 217, 0, 0.9)), url("https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80");
   background-size: cover;
   background-position: center; }
   @media only screen and (max-width: 56.25em) {
