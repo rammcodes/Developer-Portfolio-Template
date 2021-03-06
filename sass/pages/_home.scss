@@ -16,7 +16,7 @@
   }
 
   @include respond(phone) {
-    padding: 2rem 0;
+    padding: 2.3rem 0;
   }
 
   &__content {
@@ -30,7 +30,7 @@
   }
 
   &__logo-container {
-    width: 12rem;
+    width: 9rem;
   }
   &__logo {
     width: 100%;
@@ -53,12 +53,8 @@
 }
 
 .hero {
-  color: #000;
-  background: linear-gradient(
-      to right,
-      rgba($themeClr, 0.9),
-      rgba($themeClr, 0.9)
-    ),
+  color: $themeTextMain;
+  background: linear-gradient(to right, rgba($themeClrMain, 0.9), rgba($themeClrSec, 0.9)),
     url('https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
   background-size: cover;
   background-position: center;
@@ -70,7 +66,7 @@
   }
 
   &__text-primary {
-    color: #333;
+    color: $themeTextSec;
   }
   &__info {
     margin: 3rem 0 0rem 0;
@@ -106,7 +102,6 @@
     margin-top: 0rem;
     text-align: left;
   }
-
 }
 
 .about {
@@ -149,13 +144,14 @@
   &__img-cont {
     overflow: hidden;
     background: #000;
-    box-shadow: 30px 30px 0px 0px rgba($themeClr, 1);
-    -webkit-box-shadow: 30px 30px 0px 0px rgba($themeClr, 1);
-    -moz-box-shadow: 30px 30px 0px 0px rgba($themeClr, 1);
+    box-shadow: 30px 30px 0px 0px rgba($themeClrMain, 1);
+    -webkit-box-shadow: 30px 30px 0px 0px rgba($themeClrMain, 1);
+    -moz-box-shadow: 30px 30px 0px 0px rgba($themeClrMain, 1);
+    border-radius: 5px;
     @include respond(tab-land) {
-      box-shadow: 10px 10px 0px 0px rgba($themeClr, 1);
-      -webkit-box-shadow: 10px 10px 0px 0px rgba($themeClr, 1);
-      -moz-box-shadow: 10px 10px 0px 0px rgba($themeClr, 1);
+      box-shadow: 10px 10px 0px 0px rgba($themeClrMain, 1);
+      -webkit-box-shadow: 10px 10px 0px 0px rgba($themeClrMain, 1);
+      -moz-box-shadow: 10px 10px 0px 0px rgba($themeClrMain, 1);
     }
   }
 
@@ -163,6 +159,22 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
+  }
+}
+
+.skills {
+  padding: 3rem 0;
+  &__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    justify-content: space-between;
+    grid-gap: 3rem;
+  }
+  &__skill {
+    margin-bottom: 2rem;
+    font-size: 10rem;
+    color: #ccc;
+    text-align: center;
   }
 }
 
@@ -233,16 +245,18 @@
 
 .contact {
   padding: 8rem 0;
-  background: linear-gradient(
-      to right,
-      rgba($themeClr, 0.9),
-      rgba($themeClr, 0.9)
-    ),
+  background: linear-gradient(to right, rgba($themeClrMain, 0.9), rgba($themeClrSec, 0.9)),
     url('https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
   background-size: cover;
   background-position: center;
   @include respond(tab-port) {
     padding: 5rem 0;
+  }
+  &__heading {
+    color: $themeTextMain;
+    &::after {
+      background: $themeTextMain;
+    }
   }
   &__form-container {
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
