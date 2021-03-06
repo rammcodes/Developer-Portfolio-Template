@@ -15,8 +15,32 @@
 
 .heading-primary {
   font-size: 6rem;
+  position: relative;
   @include respond(phone) {
     font-size: 4.5rem;
+  }
+}
+
+.heading-primary-dec {
+  margin-bottom: 5rem;
+
+  &::after {
+    content: '';
+    position: absolute;
+    width: 5rem;
+    background: #000;
+    height: 5px;
+    top: 120%;
+    left: 0%;
+  }
+}
+
+.heading-primary-cent {
+  text-align: center;
+  &::after {
+    content: '';
+    left: 50%;
+    transform: translateX(-50%);
   }
 }
 
@@ -86,6 +110,15 @@
   }
 
   &--theme {
-    background: #fabc33;
+    background: $themeClr;
+  }
+}
+
+.txtW {
+  // text white
+  color: #fff;
+  &::after {
+    color: #fff;
+    background: #fff;
   }
 }

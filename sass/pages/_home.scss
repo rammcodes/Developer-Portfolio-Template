@@ -54,7 +54,11 @@
 
 .hero {
   color: #000;
-  background: linear-gradient(to right, rgba(#fabc33, 0.9), rgba(#fabc33, 0.9)),
+  background: linear-gradient(
+      to right,
+      rgba($themeClr, 0.9),
+      rgba($themeClr, 0.9)
+    ),
     url('https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
   background-size: cover;
   background-position: center;
@@ -72,14 +76,9 @@
     margin: 3rem 0 0rem 0;
     max-width: 80rem;
   }
-}
-
-.home-hero {
-  &__info {
-    margin: 3rem 0 7rem 0;
-    @include respond(phone) {
-      margin: 3rem 0 4rem 0;
-    }
+  &__cta {
+    margin-top: 8rem;
+    text-align: center;
   }
 
   &__btn {
@@ -94,6 +93,20 @@
       }
     }
   }
+}
+
+.home-hero {
+  &__info {
+    margin: 3rem 0 7rem 0;
+    @include respond(phone) {
+      margin: 3rem 0 4rem 0;
+    }
+  }
+  &__cta {
+    margin-top: 0rem;
+    text-align: left;
+  }
+
 }
 
 .about {
@@ -136,13 +149,13 @@
   &__img-cont {
     overflow: hidden;
     background: #000;
-    box-shadow: 30px 30px 0px 0px rgba(#fabc33, 1);
-    -webkit-box-shadow: 30px 30px 0px 0px rgba(#fabc33, 1);
-    -moz-box-shadow: 30px 30px 0px 0px rgba(#fabc33, 1);
+    box-shadow: 30px 30px 0px 0px rgba($themeClr, 1);
+    -webkit-box-shadow: 30px 30px 0px 0px rgba($themeClr, 1);
+    -moz-box-shadow: 30px 30px 0px 0px rgba($themeClr, 1);
     @include respond(tab-land) {
-      box-shadow: 10px 10px 0px 0px rgba(#fabc33, 1);
-      -webkit-box-shadow: 10px 10px 0px 0px rgba(#fabc33, 1);
-      -moz-box-shadow: 10px 10px 0px 0px rgba(#fabc33, 1);
+      box-shadow: 10px 10px 0px 0px rgba($themeClr, 1);
+      -webkit-box-shadow: 10px 10px 0px 0px rgba($themeClr, 1);
+      -moz-box-shadow: 10px 10px 0px 0px rgba($themeClr, 1);
     }
   }
 
@@ -220,7 +233,11 @@
 
 .contact {
   padding: 8rem 0;
-  background: linear-gradient(to right, rgba(#fabc33, 0.9), rgba(#fabc33, 0.9)),
+  background: linear-gradient(
+      to right,
+      rgba($themeClr, 0.9),
+      rgba($themeClr, 0.9)
+    ),
     url('https://images.unsplash.com/photo-1572480458626-97293402cc46?ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=1489&q=80');
   background-size: cover;
   background-position: center;
