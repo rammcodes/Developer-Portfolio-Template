@@ -110,14 +110,11 @@ textarea {
   line-height: 1.7; }
   @media only screen and (max-width: 37.5em) {
     .text-primary {
-      font-size: 1.7rem; } }
+      font-size: 1.8rem; } }
 
 .text-sec {
   font-size: 1.7rem;
   line-height: 1.8; }
-  @media only screen and (max-width: 37.5em) {
-    .text-sec {
-      font-size: 1.6rem; } }
 
 .text-tertiary {
   font-size: 1.6rem;
