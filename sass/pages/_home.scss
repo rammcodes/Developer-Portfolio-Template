@@ -144,14 +144,14 @@
   &__img-cont {
     overflow: hidden;
     background: #000;
-    box-shadow: 30px 30px 0px 0px rgba($themeClrMain, 1);
-    -webkit-box-shadow: 30px 30px 0px 0px rgba($themeClrMain, 1);
-    -moz-box-shadow: 30px 30px 0px 0px rgba($themeClrMain, 1);
+    box-shadow: 30px 30px 0px 0px rgba($themeClrSec, 1);
+    -webkit-box-shadow: 30px 30px 0px 0px rgba($themeClrSec, 1);
+    -moz-box-shadow: 30px 30px 0px 0px rgba($themeClrSec, 1);
     border-radius: 5px;
     @include respond(tab-land) {
-      box-shadow: 10px 10px 0px 0px rgba($themeClrMain, 1);
-      -webkit-box-shadow: 10px 10px 0px 0px rgba($themeClrMain, 1);
-      -moz-box-shadow: 10px 10px 0px 0px rgba($themeClrMain, 1);
+      box-shadow: 10px 10px 0px 0px rgba($themeClrSec, 1);
+      -webkit-box-shadow: 10px 10px 0px 0px rgba($themeClrSec, 1);
+      -moz-box-shadow: 10px 10px 0px 0px rgba($themeClrSec, 1);
     }
   }
 
