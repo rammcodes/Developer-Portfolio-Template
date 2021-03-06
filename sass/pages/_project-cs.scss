@@ -3,18 +3,28 @@
     background: #fff;
     width: 100%;
     padding: 0rem 0 8rem 0;
+    @include respond(phone) {
+      padding: 0rem 0 5rem 0;
+    }
   }
   &__text-content {
     color: #777;
     width: 70%;
     margin: 8rem auto 0 auto;
 
-    @include respond(tab-land) {
+    @include respond(tab-port) {
       width: 100%;
     }
+    @include respond(phone) {
+      margin: 6rem auto 0 auto;
+    }
   }
+
   &__project-main-img-cont {
     margin-bottom: 6rem;
+    @include respond(phone) {
+      margin-bottom: 4rem;
+    }
   }
   &__project-main-img {
     width: 100%;

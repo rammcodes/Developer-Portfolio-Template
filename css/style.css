@@ -518,17 +518,26 @@ textarea {
   background: #fff;
   width: 100%;
   padding: 0rem 0 8rem 0; }
+  @media only screen and (max-width: 37.5em) {
+    .main-cs__content {
+      padding: 0rem 0 5rem 0; } }
 
 .main-cs__text-content {
   color: #777;
   width: 70%;
   margin: 8rem auto 0 auto; }
-  @media only screen and (max-width: 75em) {
+  @media only screen and (max-width: 56.25em) {
     .main-cs__text-content {
       width: 100%; } }
+  @media only screen and (max-width: 37.5em) {
+    .main-cs__text-content {
+      margin: 6rem auto 0 auto; } }
 
 .main-cs__project-main-img-cont {
   margin-bottom: 6rem; }
+  @media only screen and (max-width: 37.5em) {
+    .main-cs__project-main-img-cont {
+      margin-bottom: 4rem; } }
 
 .main-cs__project-main-img {
   width: 100%;
