@@ -47,6 +47,9 @@
 
 .heading-sec {
   font-size: 5rem;
+  @include respond(phone) {
+    font-size: 4rem;
+  }
 }
 
 .heading-sm {
@@ -112,5 +115,3 @@
     background-image: linear-gradient(to right, $themeClrMain, $themeClrSec);
   }
 }
-
-
