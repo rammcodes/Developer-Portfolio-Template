@@ -13,16 +13,16 @@ html {
 
   @include respond(tab-land) {
     // width < 1200?
-    font-size: 59%; //1 rem = 
+    font-size: 59%; //1 rem =
   }
 
   @include respond(tab-port) {
     // width < 900?
-    font-size: 56%; //1 rem = 
+    font-size: 56%; //1 rem =
   }
 
   @include respond(big-desktop) {
-    font-size: 65%; //1rem = 
+    font-size: 65%; //1rem =
   }
 }
 
@@ -36,6 +36,18 @@ body {
   overflow-y: scroll;
   font-family: 'Jost', sans-serif;
 }
+// body::-webkit-scrollbar {
+//   width: 1rem;
+// }
+
+// body::-webkit-scrollbar-track {
+//   background: #fff;
+// }
+
+// body::-webkit-scrollbar-thumb {
+//   background-color: $themeClrSec;
+//   outline: 1px solid slategrey;
+// }
 
 a {
   text-decoration: none;
