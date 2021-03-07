@@ -179,11 +179,11 @@
     @include respond(phone) {
       display: grid;
       grid-template-columns: 1fr 1fr;
-      grid-gap: 5rem;
+      grid-gap: 5rem 2rem;
     }
   }
   &__skill {
-    font-size: 10rem;
+    font-size: 8rem;
     color: rgb(210, 210, 210);
     @include respond(phone) {
       text-align: center;
