@@ -282,17 +282,26 @@ textarea {
     object-fit: cover; }
 
 .skills {
-  padding: 3rem 0; }
+  padding: 8rem 0;
+  background: #f0f0f0; }
+  @media only screen and (max-width: 37.5em) {
+    .skills {
+      padding: 6rem 0; } }
   .skills__content {
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    justify-content: space-between;
-    grid-gap: 3rem; }
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__content {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-gap: 5rem; } }
   .skills__skill {
-    margin-bottom: 2rem;
     font-size: 10rem;
-    color: #ccc;
-    text-align: center; }
+    color: #d2d2d2; }
+    @media only screen and (max-width: 37.5em) {
+      .skills__skill {
+        text-align: center; } }
 
 .projects {
   padding: 8rem 0;
