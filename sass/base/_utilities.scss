@@ -28,7 +28,7 @@
     content: '';
     position: absolute;
     width: 5rem;
-    background: #fff;
+    background: $themeTextMain;
     height: 5px;
     top: 120%;
     left: 0%;
@@ -41,6 +41,7 @@
     content: '';
     left: 50%;
     transform: translateX(-50%);
+    background: $themeTextMain;
   }
 }
 
@@ -107,16 +108,9 @@
   }
 
   &--theme {
-    color: #fff;
+    color: $themeTextMain;
     background-image: linear-gradient(to right, $themeClrMain, $themeClrSec);
   }
 }
 
-.txtW {
-  // text white
-  color: #fff;
-  &::after {
-    color: #fff;
-    background: #fff;
-  }
-}
+
