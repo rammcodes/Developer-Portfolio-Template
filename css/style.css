@@ -102,6 +102,9 @@ textarea {
 
 .heading-sec {
   font-size: 5rem; }
+  @media only screen and (max-width: 37.5em) {
+    .heading-sec {
+      font-size: 4rem; } }
 
 .heading-sm {
   font-size: 2rem; }
